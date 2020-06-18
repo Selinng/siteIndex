@@ -1,0 +1,42 @@
+{
+  "name": "siteindex",
+  "version": "1.0.0",
+  "description": "个人网站首页",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack",
+    "dev": "webpack-dev-server --open --config ./config/webpack.dev.config.js",
+    "build": "webpack --config ./config/webpack.prod.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Selinng/siteIndex.git"
+  },
+  "keywords": [
+    "javascript",
+    "webpack"
+  ],
+  "author": "liuwenquan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Selinng/siteIndex/issues"
+  },
+  "homepage": "https://github.com/Selinng/siteIndex#readme",
+  "dependencies": {
+    "@camwiegert/typical": "^0.1.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "7",
+    "eslint": "^7.2.0",
+    "webpack": "^4.43.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.6.0",
+    "html-webpack-plugin": "^4.3.0",
+    "style-loader": "^1.2.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
