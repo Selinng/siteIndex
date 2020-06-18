@@ -1,21 +1,4 @@
-const footer = `
-<style>
-footer {
-  height: 100px;
-  line-height: 100px;
-  text-align: center;
-  background-color: #717171;
-  color: #ffffff;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-}
-</style>
-<footer class="bottom-company-info">
-  <div><a href="http://www.beian.miit.gov.cn/" target="_blank">湘ICP备20012758号</a></div>
-</footer>
-`
+import footer from './footer.html'
 customElements.define('l-footer', class extends HTMLElement {
   constructor() {
     // 必须首先调用 super方法 

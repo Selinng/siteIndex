@@ -9,27 +9,6 @@ const devConfig = {
     historyApiFallback: true, // 不跳转
     inline: true, // 实时刷新
     port: '3000'
-  },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        use: {
-          loader: "babel-loader"
-        },
-        exclude: /node_modules/
-      },
-      {
-        test: /\.css$/,
-        use: [
-          {
-            loader: "style-loader"
-          }, {
-            loader: "css-loader"
-          }
-        ]
-      }
-    ]
   }
 }
 module.exports = merge(baseConfig, devConfig)
