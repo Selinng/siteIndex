@@ -13,6 +13,13 @@ module.exports = {
     path: resolve('/dist'),
     filename: 'bundle-[hash].js'
   },
+  resolve: {
+    // 设置别名
+    alias: {
+      '@': resolve('/'),
+      '~': resolve('/app/')
+    }
+  },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
@@ -22,8 +29,8 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: resolve('lib'),
-          to: 'lib',
+          from: resolve('static'),
+          to: 'static',
           transform: function (content) {
               return UglifyJS.minify(content.toString()).code
           }
@@ -49,6 +56,20 @@ module.exports = {
             loader: "css-loader"
           }
         ]
+      },
+      {
+        test: /\.(jpg|png|gif)$/,
+        loader:"url-loader",
+        options:{
+          limit: 8 * 1024
+        }
+      },
+      {
+        test: /\.(eot|ttf|svg|woff)$/,
+        loader:"file-loader",
+        options: {
+          outputPath: 'font/' //指定这些文件打包后的目录
+        }
       },
       {
         test: /\.html$/,
