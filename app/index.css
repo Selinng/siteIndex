@@ -30,3 +30,8 @@ a {
   text-decoration: none;
   color: inherit;
 }
+l-taskbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

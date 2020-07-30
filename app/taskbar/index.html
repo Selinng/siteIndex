@@ -1,6 +1,33 @@
-<div>
+<div class="taskbar">
   <div class="left-bottom-logo"></div>
-  <div class="search"></div>
+  <div class="search">在这里输入你要搜索的内容</div>
   <div class="task-list"></div>
   <div class="show-desktop"></div>
 </div>
+<style>
+  .taskbar {
+    height: 38px;
+    background-color: #272727;
+    width: 100%;
+  }
+  .taskbar * {
+    height: 100%;
+    float: left;
+  }
+  .left-bottom-logo {
+    background: url(./static/images/windows.svg) no-repeat center/20px 20px;
+    width: 48px;
+  }
+  .search {
+    width: 344px;
+    background: #ffffff url(./static/images/search.svg) no-repeat 12px center/ 16px 16px;
+    padding-left: 38px;
+    line-height: 38px;
+    font-size: 14px;
+  }
+  .show-desktop {
+    float: right;
+    width: 4px;
+    border-left: 1px solid #969696;
+  }
+</style>

@@ -31,9 +31,9 @@ module.exports = {
         {
           from: resolve('static'),
           to: 'static',
-          transform: function (content) {
-              return UglifyJS.minify(content.toString()).code
-          }
+          // transform: function (content) {
+          //   return UglifyJS.minify(content.toString()).code
+          // }
         }
       ]
     })
