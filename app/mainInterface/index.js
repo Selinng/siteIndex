@@ -1,6 +1,6 @@
 import html from './index.html'
 
-customElements.define('l-main-interface', class extends HTMLElement {
+customElements.define('app-main-interface', class extends HTMLElement {
   constructor() {
     // 必须首先调用 super方法 
     super()

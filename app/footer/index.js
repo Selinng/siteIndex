@@ -1,5 +1,5 @@
 import footer from './footer.html'
-customElements.define('l-footer', class extends HTMLElement {
+customElements.define('app-footer', class extends HTMLElement {
   constructor() {
     // 必须首先调用 super方法 
     super()

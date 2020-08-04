@@ -1,6 +1,6 @@
 import html from './index.html'
 
-customElements.define('l-taskbar', class extends HTMLElement {
+customElements.define('app-taskbar', class extends HTMLElement {
   constructor() {
     // 必须首先调用 super方法 
     super()
